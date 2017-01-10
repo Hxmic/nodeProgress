@@ -1,0 +1,16 @@
+node.js 产生因素
+V8
+javaScript 在服务器端的空白
+事件驱动
+Commonjs的规范化
+
+一、模块
+二、包
+
+CommonJs规范的包具备一下特征
+
+包的管理器和代码调试  npm包的管理工具，node.js包的标准发布平台
+
+npm  init 生成包
+npm i（install） 安装包
+npm list 查看安装好的包
