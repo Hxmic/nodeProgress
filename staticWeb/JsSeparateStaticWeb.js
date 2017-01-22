@@ -20,7 +20,36 @@ var app = http.createServer(function(req,res){
         res.writeHeader(200,{"Content-Type":"text/html"});
         res.write(data.toString());
         res.end();
-      })
+      });
+      break;
+
+      case "/remove.html":
+      fs.readFile("remove.html",function(err,data){
+        if(err) throw err;
+        res.writeHeader(200,{"Content-Type":"text/html"});
+        res.write(data.toString());
+        res.end();
+      });
+      break;
+
+      case "/search.html":
+      fs.readFile("search.html",function(err,data){
+        if(err) throw err;
+        res.writeHeader(200,{"Content-Type":"text/html"});
+        res.write(data.toString());
+        res.end();
+      });
+      break;
+
+      case "/edit.html":
+      fs.readFile("edit.html",function(err,data){
+        if(err) throw err;
+        res.writeHeader(200,{"Content-Type":"text/html"});
+        res.write(data.toString());
+        res.end();
+      });
+      break;
+
     }
   }
   else{//其他的请求则忽略
